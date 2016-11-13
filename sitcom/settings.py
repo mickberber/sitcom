@@ -75,12 +75,13 @@ WSGI_APPLICATION = 'sitcom.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'sitcom_db',
 
         'USER': 'sitcom',
         'PASSWORD': 'sitcom_db',
         'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
